@@ -17,7 +17,7 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 65% 30%;
-        height: 90vh;
+        height: 70vh;
         width: 100%;
         align-items: center;
         justify-items: center;
@@ -25,10 +25,10 @@
     }
 
     .dp {
-        width: 20em;
-        height: 20em;
+        width: 15em;
+        height: 15em;
         /* filter: grayscale(100); */
-        background-size: 20em;
+        background-size: 15em;
         background-repeat: no-repeat;
         background-image: url("https://avatars.githubusercontent.com/u/76848292?v=4");
         border: 0px solid #000000d0;
@@ -43,12 +43,12 @@
         margin-left: 0px;
         align-items: center;
         width: 20em;
-        height: 20em;
+        height: 25em;
     }
 
     .sub-intro {
         font-family: 'Open Sans', sans-serif;
-        font-size: small;
+        font-size: 1em;
         width: 20em;
         position: relative;
         top: 7.5em;
@@ -62,18 +62,15 @@
         position: fixed;
         display: block;
         backface-visibility: visible;
-        /* background-color: rgb(10, 25, 47); */
-        /* background-color: rgb(231, 226, 226); */
         background-color: #272727;
-        border: 2px solid whitesmoke;
-        border-radius: 10px 10px 0px 0px;
-        width: 99%;
-        height: 2f;
-        /* top: -0.4em; */
+        border: 2px solid #272727;
+        border-radius: 10px 10px 10px 10px;
+        width: 98vw;
+        height: auto;
         left: 50%;
         transform: translateX(-50%);
         /* box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.575); */
-        top: 92vh;
+        top: 89vh;
         z-index: 50;
     }
 
@@ -81,6 +78,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 2em;
     }
 
     nav>ul>li {
@@ -97,11 +95,14 @@
         cursor: pointer;
     }
 
+    /* Social Mob CSS */
     .social {
         display: none;
         visibility: hidden;
         z-index: 0;
     }
+
+    /* Content-1,2,3 Mob CSS */
 
     .usual {
         /* margin-top: 1em; */
