@@ -81,12 +81,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.01em;
     }
 
     nav>ul>li {
         list-style: none;
-        display: inline-block;
+        display: inline-flex;
+        padding: 0;
         text-align: center;
     }
 
