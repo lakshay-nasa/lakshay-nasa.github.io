@@ -1,0 +1,128 @@
+/* visiogen.css */
+
+nav {
+    position: fixed;
+    display: block;
+    backface-visibility: visible;
+    /* background-color: rgb(10, 25, 47); */
+    /* background-color: rgb(231, 226, 226); */
+    background-color: #272727;
+    border: 2px solid rgba(245, 245, 245, 0.534);
+    border-radius: 10px;
+    width: 35em;
+    height: 4em;
+    top: -0.4em;
+    left: 50%;
+    transform: translateX(-50%);
+    /* box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.575); */
+    top: -0.5em;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#doc {
+    padding: 5px;  
+}
+
+#author-date{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#doc h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+#doc p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 10px;  
+}
+
+#doc p a {
+    color: #007bff; /* Link color */
+    text-decoration: underline; /* Underline the link */
+}
+
+#doc  div {
+    margin: 20px;
+}
+
+iframe {
+    margin: -10px;
+    border: 10px solid #f7f7f7;
+    width: 100%;
+    height: 500px;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+}
+
+/* Mob View */
+@media screen and (max-width: 600px) {
+    nav {
+        width: 100%; /* Adjust width for mobile */
+        border-radius: 0; /* Remove border radius for mobile */
+        top: 0; /* Adjust top position for mobile */
+    }
+
+    #doc h2 {
+        font-size: 1.2em; /* Adjust font size for mobile */
+    }
+
+    #doc p {
+        font-size: 0.9em; /* Adjust font size for mobile */
+    }
+
+    iframe {
+        height: 300px; /* Adjust height for mobile */
+    }
+
+
+        /* Navbar-mob-css */
+
+        nav {
+            position: fixed;
+            display: block;
+            backface-visibility: visible;
+            background-color: #272727;
+            border: 2px solid #272727;
+            border-radius: 10px 10px 10px 10px;
+            width: 93vw;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            /* box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.575); */
+            top: 85vh;
+            z-index: 50;
+        }
+    
+        nav>ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5em;
+        }
+    
+        nav>ul>li {
+            list-style: none;
+            display: inline-flex;
+            padding: 0;
+            text-align: center;
+        }
+    
+        .nav-icon {
+            line-height: 1.5;
+            font-size: 1.8em;
+            background-color: transparent;
+            cursor: pointer;
+        }
+}
