@@ -20,10 +20,16 @@ body{
     /* text-shadow: 0.1px .1px rgb(146, 146, 146); */
 }
 
-#name-logo{
+#name-logo {
     font-family: 'Qwitcher Grypen', cursive;
     font-size: x-large;
     flex: 2;
+    color: #ffae00;
+}
+
+#name-logo a {
+    text-decoration: none;
+    color: inherit; /* This will inherit the color from the parent element (#name-logo) */
 }
 
 
