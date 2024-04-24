@@ -1,0 +1,85 @@
+/* visiogen.css */
+
+#doc {
+    padding: 5px;  
+    color: white !important;
+}
+
+#author-date{
+    text-align: center !important;
+    padding-bottom: 20px;
+    margin: 10px !important;
+}
+
+#doc h2 {
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#doc p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    /* margin: 30px;   */
+    text-align: justify;
+}
+
+.article-header > p{
+    text-align: center !important;
+}
+
+#doc p a {
+    color: #007bff; /* Link color */
+    text-decoration: underline; /* Underline the link */
+}
+
+.contact-me{
+    text-align: justify;
+    left: 20px !important;
+}
+
+#doc  div {
+    margin: 30px;
+}
+
+#content{
+    margin: 0px !important;
+}
+
+iframe {
+    margin: -0px;
+    border: 10px solid #f7f7f7;
+    width: 95%;
+    height: 500px;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+}
+
+/* Mob View */
+@media screen and (max-width: 600px) {
+    nav {
+        width: 100%; /* Adjust width for mobile */
+        border-radius: 0; /* Remove border radius for mobile */
+        top: 0; /* Adjust top position for mobile */
+    }
+
+    #doc h2 {
+        font-size: 1.2em; /* Adjust font size for mobile */
+    }
+
+    #doc p {
+        font-size: 0.9em; /* Adjust font size for mobile */
+    }
+
+    iframe {
+        height: 300px; /* Adjust height for mobile */
+    }
+
+
+}

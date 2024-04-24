@@ -1,0 +1,128 @@
+/* global-styles.css */
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px; /* Avoid !important */
+}
+
+.gallery-container > h1 {
+    padding: 40px;
+    padding-top: 10px;
+    color: white; /* Avoid !important */
+    text-align: center;
+    font-size: 1.8rem !important;
+    font-weight: 600;
+
+}
+
+.title-top{
+    padding: 0px !important;
+    margin: 0px !important;
+    font-weight: 600;
+    font-size: 32px !important;
+}
+/* component-styles.css */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img,
+.gallery-item .video { /* Consolidate border-radius */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; /* Consolidate border-radius */
+    padding: 10px;
+}
+
+.gallery-item.video {
+    width: calc(100% + 40px);
+    height: auto;
+    margin-left: -20px;
+}
+
+.video{
+    padding: 1.25rem !important;
+    border-radius: 25% !important; /* Consolidate border-radius */
+
+}
+
+.gallery-item video:focus {
+    outline: none;
+}
+
+.gallery-item-caption {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Optional: Add a subtle overlay for videos */
+.gallery-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+    opacity: 1;
+}
+
+.gallery-item-overlay-icon {
+    font-size: 48px;
+    color: #fff;
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .gallery-item {
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 2rem;
+    }
+
+    .gallery-item.video {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+
+    .gallery-item-caption {
+        font-size: 14px;
+    }
+}

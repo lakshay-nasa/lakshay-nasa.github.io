@@ -1,0 +1,302 @@
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.card {
+  top: 5em;
+  background: transparent !important;
+  border-width: 0 !important;
+  transition: all .2s;
+}
+
+.card-title {
+  font-size: 4.25rem;
+  padding: 2.5rem 0 5.25rem 0;
+  color: whitesmoke !important;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: transparent !important;
+  background-clip: border-box;
+  border: 1px solid rgba(26, 54, 126, 0.125);
+  border-radius: .25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.vertical-timeline {
+  width: 60%;
+  position: relative;
+  padding: 1.5rem 0 1rem;
+}
+
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  /* bottom: -28px; */
+  left: 111px;
+  height: 100%;
+  width: 4px;
+  background: rgba(245, 245, 245, 0.521);
+  ;
+  border-radius: .25rem;
+  /* z-index: -20; */
+}
+
+.vertical-timeline-element {
+  position: relative;
+  margin: 0 0 1rem;
+  color: whitesmoke;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+  visibility: visible;
+  animation: cd-bounce-1 .8s;
+}
+
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.vertical-timeline-element-icon .badge-dot-xl {
+  box-shadow: 0 0 0 5px #02ff1727;
+}
+
+.badge-dot-xl {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  /* border-radius: 0.35rem !important; */
+}
+
+.badge:empty {
+  display: none;
+}
+
+
+.badge-dot-xl::before {
+  content: '';
+  width: 13.3px;
+  height: 13.3px;
+  border-radius: .3rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  margin: -5px 0 0 -5px;
+  background: #fff;
+}
+
+.badge-Dark {
+  background: conic-gradient(#ffc107 0deg,
+      #ffc107 72deg,
+      #28a745 72deg,
+      #28a745 144deg,
+      #dc3545 144deg,
+      #dc3545 216deg,
+      #007bff 216deg,
+      #007bff 288deg,
+      #6c757d 288deg,
+      #6c757d 360deg);
+}
+
+.select-element {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding-bottom: 4.25rem;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  min-width: 60px; /* Set a fixed width for each icon container */
+}
+
+.icon-text {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  text-align: center;
+  white-space: wrap !important; /* Prevent text wrapping */
+  color: whitesmoke;
+}
+
+.select-element i {
+  width: 34px;
+  height: 34px;
+  position: relative;
+}
+
+.selected {
+  position: relative;
+  box-shadow: 0 0 0 5px #02ff1727;
+}
+
+.selected::before {
+  content: '';
+  width: 20.3px;
+  height: 20.3px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.green-text {
+  color: #28a745 !important; /* Bootstrap's success color, or any green you like */
+}
+
+
+.vertical-timeline-element-content {
+  position: relative;
+  /* margin-left: 90px; */
+  font-size: 0.75rem;
+  margin: 0 0 5rem 155px;
+  /* padding: 0px 0 20px; */
+}
+
+.timeline-title {
+  font-size: 1.25rem !important;
+  /* left: -10em !important;
+  position: relative; */
+  font-weight: bold;
+}
+
+.vertical-timeline-element-content .timeline-title {
+  /* font-size: .8rem; */
+  text-transform: capitalize;
+  /* margin: 0 0 1rem; */
+  padding: 0px 0 10px;
+  text-align: left;
+}
+
+.vertical-timeline-element-content>p {
+  /* font-size: .8rem; */
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.vertical-timeline-element-date {
+  display: block;
+  position: absolute;
+  left: -135px;
+  top: 0;
+  padding-right: 10px;
+  text-align: right;
+  color: #adb5bd;
+  font-size: .7619rem;
+  white-space: wrap;
+}
+
+.vertical-timeline-element-date:before {
+  content: attr(data-month);
+  display: block;
+}
+
+.vertical-timeline-element-date:after {
+  content: attr(data-year);
+  display: block;
+}
+
+.vertical-timeline-element-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/*  */
+
+
+.text-projects {
+  color: #28a745;
+}
+
+.text-workExp {
+  color: #007bff;
+}
+
+.text-achievements {
+  color: #ffc107;
+}
+
+.text-learnings {
+  color: #dc3545;
+}
+
+.text-education {
+  color: #8c949b;
+}
+
+
+
+.timeline-quote-top{
+  color: #f5f5f5;
+  padding-bottom: 2.5rem;
+}
+
+
+.timeline-quote-base{
+  color: #f5f5f5;
+  position: relative;
+  top: 1rem;
+  /* left: -25rem; */
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 4rem;
+  opacity: 50%;
+}
+
+
+
+/* Bottom Button */
+
+
+.scroll-button {
+  width: 60px; /* Adjust the width and height to match the increased size of the icon */
+  height: 60px;
+  border-radius: 50%;
+  background-color: #398636;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-button svg {
+  font-size: 24px;
+}
+
+.scroll-button:hover {
+  background-color: #1e471c;
+}
+
