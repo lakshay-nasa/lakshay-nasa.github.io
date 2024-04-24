@@ -1,2 +1,0 @@
-const __vite__fileDeps=["assets/LifeUpdater-DrvSnoVe.js","assets/ValueWithRandom-D9YYy8_O.js","assets/index-Cjm09TJr.js","assets/index-CoeQgwMK.css"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
-import{_ as i}from"./index-Cjm09TJr.js";async function d(t,a=!0){await t.addParticleUpdater("life",async e=>{const{LifeUpdater:r}=await i(()=>import("./LifeUpdater-DrvSnoVe.js"),__vite__mapDeps([0,1,2,3]));return new r(e)},a)}export{d as loadLifeUpdater};
