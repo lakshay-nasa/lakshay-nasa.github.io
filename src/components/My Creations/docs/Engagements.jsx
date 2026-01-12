@@ -8,6 +8,41 @@ import Particle from "../../Common/Particle";
 
 const images = [
     {
+        original: "src/Assets/Engagements/ESLCBGL01.png",
+        thumbnail: "src/Assets/Engagements/ESLCBGL01.png",
+        originalHeight: "500px",
+    },
+    {
+        original: "src/Assets/Engagements/ESLCBGL02.jpeg",
+        thumbnail: "src/Assets/Engagements/ESLCBGL02.jpeg",
+        originalHeight: "500px",
+    },
+    {
+        original: "src/Assets/Engagements/ESLCBGL03.JPG",
+        thumbnail: "src/Assets/Engagements/ESLCBGL03.JPG",
+        originalHeight: "500px",
+    },
+    {
+        original: "src/Assets/Engagements/ESPune01.JPG",
+        thumbnail: "src/Assets/Engagements/ESPune01.JPG",
+        originalHeight: "500px",
+    },
+    {
+        original: "src/Assets/Engagements/ESPune02.JPG",
+        thumbnail: "src/Assets/Engagements/ESPune02.JPG",
+        originalHeight: "500px",
+    },
+    {
+        original: "src/Assets/Engagements/ESPune03.JPG",
+        thumbnail: "src/Assets/Engagements/ESPune03.JPG",
+        originalHeight: "500px",
+    },
+    {
+        original: "src/Assets/Engagements/ESpune04.JPG",
+        thumbnail: "src/Assets/Engagements/ESpune04.JPG",
+        originalHeight: "500px",
+    },
+    {
         original: "src/Assets/Engagements/KCD1.jpg",
         thumbnail: "src/Assets/Engagements/KCD1.jpg",
         originalHeight: "500px",
